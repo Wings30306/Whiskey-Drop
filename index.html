@@ -5,57 +5,68 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whiskey Drop | Taste a new whiskey every month</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!--Nav-->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default whiskey-nav">
         <div class="container-fluid">
             <!--Logo-->
             <div class="navbar-header">
-                <a href="/" class="navbar-brand">
+                <a href="/" class="navbar-brand" id="whiskey">
                     Whiskey Drop
                 </a>
             </div>
 
             <!--Navbar-->
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="">About</a></li>
                 <li class="visible-xs"><a href="">Sign In</a></li>
             </ul>
 
             <!--Message-->
             <div class="navbar-header navbar-right hidden-xs">
-                <a href="/login" class='btn btn-default navbar-btn'>Sign Up</a>
+                <a href="/login" class='btn btn-warning navbar-btn btn-lg'>Sign Up</a>
                 <p class="navbar-text"><i>Great whiskey delivered to your door</i></p>
             </div>
         </div>
     </nav>
-    <article class="container">
-        <!--Alert-->
-        <div class="row hidden-xs">
-            <div class="col-xs-12">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>
-                </div>
-            </div>
-        </div>
-        <!-- Callout -->
+				<!--Alert-->
+			
+	
+				<!-- Callout -->
+			<div class="container container-callout"></container>	
         <div class="row">
             <div class="col-xs-12">
                 <section class="callout jumbotron text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
-                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s class="hidden-xs">€19.99</s> <span class="visible-xs"><br></span> <strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success" data-toggle='modal' data-target='#signUpModal'>Sign Up!</button></p>
-                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
+										<p class="lead">Sign up today to start receiving the world's best whiskeys every month.</p>
+										<p><s class="hidden-xs">€19.99</s> <span class="visible-xs"><br></span> <strong><mark>First one is free!</mark></strong></p>
+                    <p><button class="btn btn-lg btn-warning" data-toggle='modal' data-target='#signUpModal'>Sign Up!</button></p>
+										<p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
+										<div class="alert alert-warning alert-dismissible sale" role="alert">
+												<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+											<div class="row hidden-xs">
+													<div class="col-xs-12">
+															<div class="alert alert-warning sale">
+																	<strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>
+															</div>
+													</div>
+											</div>
+										</div>	
+									</div>
                 </section>
             </div>
-        </div>
+				</div>
+			</div>	
         <!-- /.callout -->
+			
 
-        <!-- Quotes -->
+				<!-- Quotes -->
+			<div class="container container-quotes"></div>	
         <section class="quotes">
             <div class="row">
                 <div class="col-xs-12">
@@ -68,7 +79,7 @@
                 <div class="col-xs-12 col-md-6">
                     <div class="media">
                         <div class="media-left hidden-xs">
-                            <img src="images/girl-image.png" class="img-circle media-object" height=100 width=100>
+                            <img src="" class="img-circle media-object" height=100 width=100>
                         </div>
                         <div class="media-body">
                             <blockquote class="quote">
@@ -86,16 +97,18 @@
                         <div class="media-body">
                             <blockquote class="quote">
                                 <p>I haven't been sober for months!</p>
-                                <footer>Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+                                <footer>Mundungus Fletcher in <cite title="Twitter">The Daily Prophet</cite></footer>
                             </blockquote>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+				</section>
+			</div>	
         <!-- /.quotes -->
-
-        <!-- Features -->
+		
+				<!-- Features -->
+			<div class="container container-features"></div>	
         <section class="features">
             <div class="row">
                 <div class="col-xs-12">
@@ -127,10 +140,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- /.features -->
-    </article>
-
+				</section>
+			</div>	
+				<!-- /.features -->
+				
     <!-- Modal -->
     <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
